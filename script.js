@@ -3,16 +3,18 @@ const scoreboard = document.getElementById("scoreboard");
 
 let n = 2;
 next();
-
 function next() {
     scoreboard.innerHTML = n - 1;
     field.innerHTML = "";
     
     const n2 = n*n;
     const size = 492 / n;
-    const margin = Math.max(Math.floor(size * 0.03), 1);
+    const margin = Math.max(Math.floor(size / 30), 1);
     const realSize = size - margin;
-
+    console.log("size = " + size);
+    console.log("margin = " + margin);
+    console.log("realSize = " + realSize);
+    console.log("492 - (realSize + margin) * n = " + (492 - (realSize + margin) * n));
     const r = randomInteger(0, 255);
     const g = randomInteger(0, 255);
     const b = randomInteger(0, 255);
