@@ -1,2 +1,2 @@
-# Web-Lab2
-Game
+# Simple game (html, css, js)
+Catch a different square!
